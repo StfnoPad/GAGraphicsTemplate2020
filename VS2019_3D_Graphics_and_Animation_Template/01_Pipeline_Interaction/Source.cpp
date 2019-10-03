@@ -70,7 +70,6 @@ GLuint			program;
 GLint			proj_location;
 glm::vec3		modelPosition;
 glm::vec3		modelRotation;
-
 Mesh cube;		// Add a cube object
 
 
@@ -90,8 +89,8 @@ int main()
 
 	// Fullscreen
 	const GLFWvidmode * mode = glfwGetVideoMode(glfwGetPrimaryMonitor());
-	windowWidth = mode->width; windowHeight = mode->height;
-	//window = glfwCreateWindow(windowWidth, windowHeight, title.c_str(), glfwGetPrimaryMonitor(), NULL); // fullscreen
+	// windowWidth = mode->width; windowHeight = mode->height; //fullscreen
+	// window = glfwCreateWindow(windowWidth, windowHeight, title.c_str(), glfwGetPrimaryMonitor(), NULL); // fullscreen
 
 	// Window
 	window = glfwCreateWindow(windowWidth, windowHeight, title.c_str(), NULL, NULL);
@@ -121,7 +120,7 @@ int main()
 	glfwSetCursorPosCallback(window, onMouseMoveCallback);		// Set callback for mouse move
 	glfwSetScrollCallback(window, onMouseWheelCallback);		// Set callback for mouse wheel.
 																//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);	// Set mouse cursor. Fullscreen
-	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);	// Set mouse cursor FPS.
+	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);	// Set mouse cursor FPS fullscreen.
 
 	setupRender();								// setup some render variables.
 	startup();									// Setup all necessary information for startup (aka. load texture, shaders, models, etc).
