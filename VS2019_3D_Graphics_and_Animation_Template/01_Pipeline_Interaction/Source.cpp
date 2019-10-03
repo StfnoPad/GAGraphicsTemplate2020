@@ -70,6 +70,7 @@ GLuint			program;
 GLint			proj_location;
 glm::vec3		modelPosition;
 glm::vec3		modelRotation;
+
 Mesh cube;		// Add a cube object
 
 
