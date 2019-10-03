@@ -174,7 +174,7 @@ void setupRender() {
 void startup() {
 
 	// Load main object model and shaders
-	cube.LoadModel("high_res.obj");
+	cube.LoadModel("cube_uv.obj");
 
 	program = glCreateProgram();
 
