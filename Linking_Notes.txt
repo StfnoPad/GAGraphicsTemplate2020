@@ -1,0 +1,32 @@
+Here are the libraries that you need to link:
+
+VC++ Directories >> Include Directories:
+•	$(SolutionDir)..\Libraries\glfw-3.3.bin.WIN64\include
+•	$(SolutionDir)..\Libraries\glew-2.1.0\include
+•	$(SolutionDir)..\Libraries\glm-0.9.9.6\
+•	$(SolutionDir)..\Libraries\stb_image
+
+VC++ Directories >> Reference Directories:
+•	$(SolutionDir)..\Libraries\glfw-3.3.bin.WIN64\lib-vc2019
+•	$(SolutionDir)..\Libraries\glew-2.1.0\bin\Release\x64
+
+VC++ Directories >> Library Directories:
+•	$(SolutionDir)..\Libraries\glfw-3.3.bin.WIN64\lib-vc2019
+•	$(SolutionDir)..\Libraries\glew-2.1.0\lib\Release\x64
+
+C/C++ >> Additional Include Directories:
+•	$(SolutionDir)..\Libraries\glfw-3.3.bin.WIN64\include
+•	$(SolutionDir)..\Libraries\glew-2.1.0\include
+
+Linker >> Additional Library Directories:
+•	$(SolutionDir)..\Libraries\glfw-3.3.bin.WIN64\lib-vc2019
+•	$(SolutionDir)..\Libraries\glew-2.1.0\lib\Release\x64
+
+Linker >> Input >> Additional Dependencies:
+opengl32.lib
+glew32.lib
+glew32s.lib
+glfw3.lib
+glfw3dll.lib
+
+Do not forget to add also the glew32.dll to your folder (aka where you have your shaders) - also use the x64 version, yes the one with a 32 number on it.
